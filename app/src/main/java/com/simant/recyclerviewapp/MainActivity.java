@@ -43,6 +43,26 @@ public class MainActivity extends AppCompatActivity {
         contactsList.add(new Contacts("Hritik Roshan", "9845216619", R.drawable.hritik));
         contactsList.add(new Contacts("John Snow", "9845427361", R.drawable.john));
 
+        // more data for recyclerview
+        contactsList.add(new Contacts("Tom Cruise", "9861169270", R.drawable.tom));
+        contactsList.add(new Contacts("Hritik Roshan", "9845216619", R.drawable.hritik));
+        contactsList.add(new Contacts("John Snow", "9845427361", R.drawable.john));
+        contactsList.add(new Contacts("Tom Cruise", "9861169270", R.drawable.tom));
+        contactsList.add(new Contacts("Hritik Roshan", "9845216619", R.drawable.hritik));
+        contactsList.add(new Contacts("John Snow", "9845427361", R.drawable.john));
+        contactsList.add(new Contacts("Tom Cruise", "9861169270", R.drawable.tom));
+        contactsList.add(new Contacts("Hritik Roshan", "9845216619", R.drawable.hritik));
+        contactsList.add(new Contacts("John Snow", "9845427361", R.drawable.john));
+        contactsList.add(new Contacts("Tom Cruise", "9861169270", R.drawable.tom));
+        contactsList.add(new Contacts("Hritik Roshan", "9845216619", R.drawable.hritik));
+        contactsList.add(new Contacts("John Snow", "9845427361", R.drawable.john));
+        contactsList.add(new Contacts("Tom Cruise", "9861169270", R.drawable.tom));
+        contactsList.add(new Contacts("Hritik Roshan", "9845216619", R.drawable.hritik));
+        contactsList.add(new Contacts("John Snow", "9845427361", R.drawable.john));
+        contactsList.add(new Contacts("Tom Cruise", "9861169270", R.drawable.tom));
+        contactsList.add(new Contacts("Hritik Roshan", "9845216619", R.drawable.hritik));
+        contactsList.add(new Contacts("John Snow", "9845427361", R.drawable.john));
+
         ContactsAdapter contactsAdapter = new ContactsAdapter(this, contactsList);
         recyclerView.setAdapter(contactsAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
