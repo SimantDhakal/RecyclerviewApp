@@ -20,7 +20,19 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerView);
 
+        /* have to create a interface to fetch data from Database */
+
+        // Data listing through Arraylist
         List<Contacts> contactsList = new ArrayList<>();
+        contactsList.add(new Contacts("Tom Cruise", "9861169270", R.drawable.tom));
+        contactsList.add(new Contacts("Hritik Roshan", "9845216619", R.drawable.hritik));
+        contactsList.add(new Contacts("John Snow", "9845427361", R.drawable.john));
+        contactsList.add(new Contacts("Tom Cruise", "9861169270", R.drawable.tom));
+        contactsList.add(new Contacts("Hritik Roshan", "9845216619", R.drawable.hritik));
+        contactsList.add(new Contacts("John Snow", "9845427361", R.drawable.john));
+        contactsList.add(new Contacts("Tom Cruise", "9861169270", R.drawable.tom));
+        contactsList.add(new Contacts("Hritik Roshan", "9845216619", R.drawable.hritik));
+        contactsList.add(new Contacts("John Snow", "9845427361", R.drawable.john));
         contactsList.add(new Contacts("Tom Cruise", "9861169270", R.drawable.tom));
         contactsList.add(new Contacts("Hritik Roshan", "9845216619", R.drawable.hritik));
         contactsList.add(new Contacts("John Snow", "9845427361", R.drawable.john));
