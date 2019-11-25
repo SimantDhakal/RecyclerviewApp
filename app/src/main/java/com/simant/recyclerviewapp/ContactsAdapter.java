@@ -1,18 +1,14 @@
 package com.simant.recyclerviewapp;
 
 import android.content.Context;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
+import com.squareup.picasso.Picasso;
 import java.util.List;
-
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ContactsViewHolder>{
@@ -36,7 +32,14 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.Contac
     @Override
     public void onBindViewHolder(@NonNull ContactsViewHolder holder, int position) {
         Contacts contacts = contactsList.get(position);
-        holder.imgProfile.setImageResource(contacts.getImageId());
+
+        Picasso.get()
+                .load(contacts.getImageId())
+                .placeholder(R.drawable.ic_launcher_background)
+                .resize(180, 180)
+                .centerCrop()
+                .into(holder.imgProfile);
+
         holder.tbName.setText(contacts.getName());
         holder.tvPhone.setText(contacts.getPhoneNo());
     }
